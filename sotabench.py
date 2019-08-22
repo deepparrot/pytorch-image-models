@@ -186,7 +186,7 @@ model_map = dict(
 
 model_names = list_models(pretrained=True)
 
-for model_name in model_names:
+for model_name in model_names[:7]:
     if model_name not in model_map:
         print('Skipping %s' % model_name)
         continue
